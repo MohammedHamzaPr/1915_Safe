@@ -1,0 +1,36 @@
+[project]
+name = "scwe"
+version = "0.0.1"
+description = "Scwe - Your Simple Password Manager - Free Version"
+authors = [
+    { name = "Mohammed Hamza", email = "eibdhhs0@gmail.com" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+    "Topic :: Utilities",
+]
+
+dependencies = [
+    "flet>=0.27.6"
+]
+
+[project.urls]
+Homepage = "https://github.com/MohammedHamzaPr/scwe"
+Repository = "https://github.com/MohammedHamzaPr/scwe"
+Issues = "https://github.com/MohammedHamzaPr/scwe/issues"
+
+[project.scripts]
+scwe = "src.main:main"
+
+[tool.flet]
+app.module = "src/main"
+
+[tool.flet.app.startup_screen]
+show = true
+message = "Scwe Startup"
