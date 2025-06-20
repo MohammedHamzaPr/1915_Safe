@@ -1,7 +1,7 @@
 [project]
-name = "scwe"
+name = "1915_Safe"
 version = "0.0.1"
-description = "Scwe - Your Simple Password Manager - Free Version"
+description = "1915 Safe - Your Simple Password Manager - Free Version"
 authors = [
     { name = "Mohammed Hamza", email = "eibdhhs0@gmail.com" }
 ]
@@ -17,20 +17,22 @@ classifiers = [
 ]
 
 dependencies = [
-    "flet>=0.27.6"
+    "flet>=0.27.6",
+    "requests",
+    "pycryptodome",
+    "hahslib"
 ]
 
 [project.urls]
-Homepage = "https://github.com/MohammedHamzaPr/scwe"
-Repository = "https://github.com/MohammedHamzaPr/scwe"
-Issues = "https://github.com/MohammedHamzaPr/scwe/issues"
+Homepage = "https://github.com/MohammedHamzaPr/1915_Safe"
+Repository = "https://github.com/MohammedHamzaPr/1915_Safe"
 
 [project.scripts]
-scwe = "src.main:main"
+1915_Safe = "src.main:main"
 
 [tool.flet]
 app.module = "src/main"
 
 [tool.flet.app.startup_screen]
 show = true
-message = "Scwe Startup"
+message = "1915 Safe Startup"
